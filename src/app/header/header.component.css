@@ -1,0 +1,9 @@
+.foto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    border-radius: 50%;
+}
+
