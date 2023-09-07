@@ -1,0 +1,97 @@
+<!-- <tr>
+    <h2> Work Experience </h2> <br>
+</tr>
+<tr>
+    
+    {{puesto}}
+    {{empresa}}
+    {{fecha_ini}}
+    {{fecha_fin}}
+    {{ciudad}}
+    {{pais}}
+    {{logros }}
+    
+</tr>        
+<tr>
+    <h2>logros</h2>    
+</tr>
+ -->
+
+ <h1>Experiencia Laboral</h1>
+ <table>
+     <tr>
+         <td>Puesto:</td>
+         <td id="puesto"></td>
+     </tr>
+     <tr>
+         <td>Empresa:</td>
+         <td id="empresa"></td>
+     </tr>
+     <tr>
+         <td>Fecha de Inicio:</td>
+         <td id="fecha_ini"></td>
+     </tr>
+     <tr>
+         <td>Fecha de Finalización:</td>
+         <td id="fecha_fin"></td>
+     </tr>
+     <tr>
+         <td>Ciudad:</td>
+         <td id="ciudad"></td>
+     </tr>
+     <tr>
+         <td>País:</td>
+         <td id="pais"></td>
+     </tr>
+     <tr>
+         <th colspan="2">Logros</th>
+     </tr>
+     <tr>
+         <td colspan="2" id="logros"></td>
+     </tr>
+ </table>
+
+ <script>
+     // Datos de work-experience.json
+     var workExperienceData = [
+         {
+             "puesto": "Frontend Developer",
+             "empresa": "Amazon",
+             "fecha_ini": "08/2022",
+             "fecha_fin": "present",
+             "ciudad": "San Francisco",
+             "pais": "USA",
+             "logros": [
+                 {
+                     "logro": "Web site X"
+                 },
+                 {
+                     "logro": "Shopping cart Y"
+                 },
+                 {
+                     "logro": "Frontend integration with GraphQL"
+                 }
+             ]
+         }
+     ];
+
+     // Función para mostrar los datos en el HTML
+     function mostrarExperienciaLaboral() {
+         var experiencia = workExperienceData[0]; // Suponiendo que solo tienes un registro en workExperienceData
+         document.getElementById('puesto').textContent = experiencia.puesto;
+         document.getElementById('empresa').textContent = experiencia.empresa;
+         document.getElementById('fecha_ini').textContent = experiencia.fecha_ini;
+         document.getElementById('fecha_fin').textContent = experiencia.fecha_fin;
+         document.getElementById('ciudad').textContent = experiencia.ciudad;
+         document.getElementById('pais').textContent = experiencia.pais;
+
+         var logrosHtml = '';
+         experiencia.logros.forEach(function (logro) {
+             logrosHtml += logro.logro + '<br>';
+         });
+         document.getElementById('logros').innerHTML = logrosHtml;
+     }
+
+     // Llama a la función para mostrar la experiencia laboral
+     mostrarExperienciaLaboral();
+ </script>

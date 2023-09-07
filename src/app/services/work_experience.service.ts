@@ -7,19 +7,19 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class HeaderService {
+export class WorkExperienceService {
 
-  apiURL = 'http://localhost:8080/header'
-  constructor( private http: HttpClient) 
+  apiURL = 'http://localhost:8080/work_experience'
+  constructor( private http:HttpClient) 
   { }
 
-  httpOptions = {
+  httpOptions ={
     headers : new HttpHeaders({
-      'Content-Type':  'application/json'
+      'Content-Type':'application/json'
     })
   }
 
-  getHeader(): Observable<any>{
+  getwork_experience(): Observable<any>{
     return this.http.get<any>(this.apiURL, this.httpOptions)
     .pipe(
       retry(1),
