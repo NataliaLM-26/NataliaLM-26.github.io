@@ -3,27 +3,22 @@ h3{
 }
 
 #empresa{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: lighter;
 }
 
-#fecha{
-    font-style: italic;
-    color: #2CBDAF;
-}
-
-#ciudad{
-    font-style: italic;
-    color: #2CBDAF;
+.informacion{
     display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-content:end;
+    flex-direction: row;
+    justify-content: space-between;
+    font-style: italic;
+    font-size: 14px;
+    color: #2CBDAF;
 }
 
 #logros{
     font-style: italic;
-    font-size: 18px;
+    font-size: 14px;
     color: #2CBDAF;
 }
 
@@ -31,10 +26,12 @@ ul {
     list-style: none;
   }
   
-  ul li::before {
+  ul li::before{
     content: "■";
     color: #2CBDAF;
     margin-right: 5px;
   }
 
-  
+.lista{
+    font-size: 16px;
+}

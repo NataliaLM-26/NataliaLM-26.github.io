@@ -1,18 +1,15 @@
-<h2> Work Experience </h2> <br>
-    <h3 id="puesto">{{puesto}} </h3>
-    <p id="empresa">{{empresa}} </p>
-    <p id="fecha">{{fecha_ini}} - {{fecha_fin}} </p>
-    <p id="ciudad">{{ciudad}},{{pais}} </p>
-    <p id="logros">Logros</p>
-        <ul class="lista">
-          <li *ngFor="let logro of logros">{{ logro.logro }}</li>
-        </ul>
-
-    <h3 id="puesto">{{puesto}} </h3>
-    <p id="empresa">{{empresa}} </p>
-    <p id="fecha">{{fecha_ini}} - {{fecha_fin}} </p>
-    <p id="ciudad">{{ciudad}},{{pais}} </p>
-    <p id="logros">Logros</p>
-        <ul class="lista">
-          <li *ngFor="let logro of logros">{{ logro.logro }}</li>
-        </ul>
+<h2>Experiencia Laboral</h2> <br>
+    <ul id="titulo">
+        <div *ngFor="let work of works">
+            <h3 id="puesto">{{work.puesto}} </h3>
+            <p id="empresa">{{work.empresa}} </p>
+            <div class="informacion">
+                <p id="fecha">{{work.fecha_ini}} - {{work.fecha_fin}} </p>
+                <p id="ciudad">{{work.ciudad}},{{work.pais}} </p>
+            </div>
+            <p id="logros">Logros:</p>
+            <ul class="lista">
+              <li *ngFor="let logro of work.logros"> {{ logro.logro }} </li>
+            </ul>
+        </div>
+    </ul>
