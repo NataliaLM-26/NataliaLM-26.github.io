@@ -1,4 +1,8 @@
-h3{
+p{
+    line-height: 1px;
+}
+#puesto{
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -34,4 +38,6 @@ ul {
 
 .lista{
     font-size: 16px;
+    padding-left: 0;
+    margin-left: 0;
 }

@@ -5,6 +5,12 @@
     font-family: sans-serif;
 }
 table{
-    padding-left: 20%;
+    padding-left: 19%;
     border: none;
+}
+
+td, th {
+  padding: 1rem; 
+  border: 1px #2CBDAF;
+  border-style: solid;
 }

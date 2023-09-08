@@ -1,18 +1,17 @@
-<table>
-<tr>
-    <td id="presentation">
-        <h2> {{name}} </h2>
-        <h4 id="">{{titulo}} </h4>
-        <h6>{{objetivo}} </h6>
-    </td>
-    <td>
-        <img class="foto" src={{foto}} />
-    </td>
-    <td>
-        {{email}} <br>
-        {{celular}} <br>
-        {{ubicacion}} <br>
-        {{redsocial}}
-    </td>
-</tr>
-</table>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<div class="container">
+  <div id="presentation">
+    <p id="nombre">{{name}}</p>
+    <p id="titulo">{{titulo}}</p>
+    <p id="objetivo">{{objetivo}}</p>
+  </div>
+  <div>
+    <img class="foto" src="https://firebasestorage.googleapis.com/v0/b/mycv-natalia.appspot.com/o/n.jpeg?alt=media&token=fe8f37df-c519-499b-80cd-dfb054261782" />
+  </div>
+  <section class="contacto">
+    <div id="social"> {{email}} <i class="fas fa-envelope"></i></div>
+    <div id="social"> {{celular}} <i class="fas fa-phone"></i></div>
+    <div id="social"> {{ubicacion}} <i class="fas fa-map-marker"></i></div>
+    <div id="social"> {{redsocial}} <i class="fab fa-twitter"></i></div>
+  </section>
+</div>
