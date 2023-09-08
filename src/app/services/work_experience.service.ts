@@ -10,8 +10,7 @@ import { BehaviorSubject } from 'rxjs';
 export class WorkExperienceService {
 
   apiURL = 'http://localhost:8080/work_experience'
-  constructor( private http:HttpClient) 
-  { }
+  constructor( private http:HttpClient) { }
 
   httpOptions ={
     headers : new HttpHeaders({
@@ -40,5 +39,4 @@ export class WorkExperienceService {
   window.alert(errorMessage);
   return throwError(errorMessage);
   }
-
 }

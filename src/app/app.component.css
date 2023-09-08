@@ -1,0 +1,9 @@
+*{
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+}
+table{
+    padding-left: 20%;
+    border: none;
+}

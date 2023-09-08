@@ -15,20 +15,39 @@ export class WorkExperienceComponent implements OnInit{
   fecha_fin : string = "fake_date_end";
   ciudad : string = "fake city";
   pais : string = "fake country";
-  logros: string = "fake";
+
+  logros: any[] = [];
+  //data: [] = [];
+
+  /* ngOnInit(): void {
+    this.workExperienceService.getwork_experience()
+    .subscribe((data:any) => {
+      console.log(data[0]);
+      this.experience=data[0];
+    });
+  }
+} */
 
   ngOnInit(): void {
     this.workExperienceService.getwork_experience()
     .subscribe( (data: any) => {
-      console.log(data);
-      this.puesto = data.puesto;
-      this.empresa=data.empresa;
-      this.fecha_ini=data.fecha_ini;
-      this.fecha_fin=data.fecha_fin;
-      this.ciudad=data.ciudad;
-      this.pais=data.pais;
-      this.logros=data.logros;
-    });
+      //console.log(data);
+      
+      this.puesto = data[0].puesto;
+      this.empresa=data[0].empresa;
+      this.fecha_ini=data[0].fecha_ini;
+      this.fecha_fin=data[0].fecha_fin;
+      this.ciudad=data[0].ciudad;
+      this.pais=data[0].pais;
+      this.logros=data[0].logros;
+     },
+     error => {
+       console.log("Error", error);
+   /*  this.workExperienceService = data[0];
+    this.workExperienceService = data[1]; */
+  /*   console.log(data[0]);
+    console.log(data[1]); */
+    } 
+    );
   }
-
 }
