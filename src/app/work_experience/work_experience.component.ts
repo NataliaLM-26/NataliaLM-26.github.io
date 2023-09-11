@@ -16,7 +16,6 @@ export class WorkExperienceComponent implements OnInit{
   ciudad : string = "fake city";
   pais : string = "fake country";
 
-  logros: any[] = [];
   works: any[]=[];
 
   ngOnInit(): void {
