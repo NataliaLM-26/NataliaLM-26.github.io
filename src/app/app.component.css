@@ -1,0 +1,16 @@
+*{
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+    font-family: sans-serif;
+}
+table{
+    padding-left: 19%;
+    border: none;
+}
+
+td, th {
+  padding: 1rem; 
+  border: 1px #2CBDAF;
+  border-style: solid;
+}

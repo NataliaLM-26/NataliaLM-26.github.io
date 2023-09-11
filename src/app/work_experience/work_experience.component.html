@@ -1,0 +1,16 @@
+<h2>Work Experience</h2> <br>
+    <ul id="titulo">
+        <div *ngFor="let work of works">
+            <p id="puesto">{{work.puesto}} </p>
+            <p id="empresa">{{work.empresa}} </p>
+            <div class="informacion">
+                <p id="fecha">{{work.fecha_ini}} - {{work.fecha_fin}} </p>
+                <p id="ciudad">{{work.ciudad}},{{work.pais}} </p>
+            </div>
+            <p id="logros">Logros:</p>
+            <ul class="lista">
+              <li *ngFor="let logro of work.logros"> {{ logro.logro }} </li>
+            </ul>
+            <br>
+        </div>
+    </ul>
