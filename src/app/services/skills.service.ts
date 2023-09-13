@@ -9,7 +9,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class SkillsService {
 
-  apiURL = 'http://localhost:8080/work_experience'
+  apiURL = 'http://localhost:8080/skills'
   constructor( private http:HttpClient) { }
 
   httpOptions ={

@@ -9,18 +9,13 @@ import { SkillsService } from '../services/skills.service';
 export class SkillsComponent implements OnInit {
   constructor(private skillsService: SkillsService){}
 
-  habilidades : any[] = [];
+  skills : any[] = [];
 
 ngOnInit(): void {
   this.skillsService.getskills()
-  .subscribe( (data: any) => {
-    console.log(typeof(data));
-    this.habilidades = data.map((campo: any) => {
-      return {
-        skills: campo.skills
-      };
-    });
-    });
+  .subscribe(data=>{
+    this.skills=data["skills"];
+      });
   }
 
 }
