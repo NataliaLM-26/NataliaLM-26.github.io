@@ -1,21 +1,20 @@
 *{
-    justify-content: center;
-    align-content: center;
-    padding: 1rem;
+    justify-content:flex-start;
+    align-content:flex-start;
+    padding: 2rem;
     font-family: sans-serif;
 }
 table{
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 18%;
+    padding-right: 18%;
     border: none;
 }
 
-td, th {
-  padding: 1rem; 
+td, th { 
   border: 1px #2CBDAF;
   border-style: solid;
 }
 
 #work{
-  width: 55%;
+  width: 50%;
 }
