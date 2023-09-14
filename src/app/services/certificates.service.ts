@@ -6,10 +6,10 @@ import { retry, catchError } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class SkillsService {
+export class CertificatesService {
 
-  apiURL = 'http://localhost:8080/skills'
-  constructor( private http:HttpClient) { }
+  apiURL = 'http://localhost:8080/certificates'
+  constructor(private http:HttpClient) { }
 
   httpOptions ={
     headers : new HttpHeaders({
@@ -17,7 +17,7 @@ export class SkillsService {
     })
   }
 
-  getskills(): Observable<any>{
+  getcertificates(): Observable<any>{
     return this.http.get<any>(this.apiURL, this.httpOptions)
     .pipe(
       retry(1),
@@ -38,4 +38,5 @@ export class SkillsService {
   window.alert(errorMessage);
   return throwError(errorMessage);
   }
+
 }
