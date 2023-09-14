@@ -19,3 +19,7 @@ td, th {
 #work{
   width: 55%;
 }
+
+#interests{
+  grid-template-columns: 2;
+}
