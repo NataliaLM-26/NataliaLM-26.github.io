@@ -8,7 +8,7 @@ import { retry, catchError } from 'rxjs';
 })
 export class CertificatesService {
 
-  apiURL = 'http://localhost:8080/certificates'
+  apiURL = 'https://apicv-service-natalialm-26.cloud.okteto.net/certificates'
   constructor(private http:HttpClient) { }
 
   httpOptions ={

@@ -8,7 +8,7 @@ import { retry, catchError } from 'rxjs';
 })
 export class SkillsService {
 
-  apiURL = 'http://localhost:8080/skills'
+  apiURL = 'https://apicv-service-natalialm-26.cloud.okteto.net/skills'
   constructor( private http:HttpClient) { }
 
   httpOptions ={
