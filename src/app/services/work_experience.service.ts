@@ -9,7 +9,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class WorkExperienceService {
 
-  apiURL = 'http://localhost:8080/work_experience'
+  apiURL = 'https://apicv-service-natalialm-26.cloud.okteto.net/work_experience'
   constructor( private http:HttpClient) { }
 
   httpOptions ={
