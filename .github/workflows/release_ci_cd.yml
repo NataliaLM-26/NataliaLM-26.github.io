@@ -20,10 +20,6 @@ jobs:
           file_name: .env
           fail_on_empty: false
           
-      - name: build angular, output in dist/openai
-        run: |
-          CI=false npm run build
-          
       - name: show dir, .env file
         run: |
           ls -la 
