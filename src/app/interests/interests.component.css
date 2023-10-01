@@ -1,0 +1,17 @@
+#icon{
+    height: 1rem;
+    color: rgb(44, 189, 175);
+}
+
+.interests{
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 35%;
+    float: left;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
