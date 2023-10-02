@@ -1,0 +1,66 @@
+*{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: left;
+    font-family: sans-serif;
+}
+
+#presentation{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-content: left;
+}
+
+p{
+    line-height: 1.5px;
+}
+
+#nombre{
+    color: #111526;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#titulo{
+    color: #2CBDAF;
+    font-weight:550;
+}
+
+#objetivo{
+    font-size: 14px;
+    color: #111526;
+}
+
+.foto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    border: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #2CBDAF;
+}
+
+.contacto{
+    flex: 1;
+    display:flex ;
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
+    padding-right: 1rem;
+    gap: 1rem;
+    color: #111526;
+}
+
+#social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: right;
+    gap: 0.5rem;
+}
