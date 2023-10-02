@@ -1,17 +1,28 @@
-<table border="1">
+<table class="tabla">
   <tr>
-    <td colspan="2">
+    <td colspan="2" id="header">
       <app-header></app-header>
     </td>
   </tr>
   <tr>
-    <td>
-      <app-work-experience></app-work-experience>
-    </td>
-    <td>
-      sprint 2 here...
-    </td>
+      <td id="work">
+        <app-work-experience></app-work-experience>
+      </td>
+      <td>
+        <tr id="skills">
+          <app-skills></app-skills>
+        </tr>
+        <tr id="certificates">
+          <app-certificates></app-certificates>
+        </tr>
+        <tr id="interests">
+          <app-interests></app-interests>
+        </tr>
+      </td>
   </tr>
 </table>
+<!-- comentario para pasar develop -->
+<!-- comentario para pasar hotfixes -->
 <!-- cambio para deshacer commits en release -->
 <!-- cambio para deshacer commits en release y hacer pull request -->
+<!-- rama integrar para hacer el commit -->
